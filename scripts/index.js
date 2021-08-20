@@ -21,12 +21,17 @@ map.fitBounds(bounds);
 
 map.setView([500, 500], 1.5)
 
-var lilaMaker = L.icon({
-    iconUrl: './assets/marker/Marker_lila.png',
-    iconSize: [100, 100]
+var makerLila = L.icon({
+    iconUrl: './assets/marker/marker_lila.png',
+    iconSize: [30, 30]
+});
+
+var makerRot = L.icon({
+    iconUrl: './assets/marker/marker_rot.png',
+    iconSize: [30, 30]
 });
 
 
-L.marker([500, 500], {
-    icon: lilaMaker 
+L.marker([470, 525], {
+    icon: makerRot
 }).addTo(map).bindPopup('TestTest').openPopup();;
