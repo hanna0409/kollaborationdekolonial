@@ -1,4 +1,3 @@
-
 var bounds = [[0,0], [1000,1000]];
 
 var map = L.map('map', {
@@ -13,7 +12,7 @@ var map = L.map('map', {
 });
 
 var image = L.imageOverlay(
-    './assets/bilder/WebsiteLayoutFINAL2.png', 
+    './assets/bilder/WebsiteLayoutFINAL4.png', 
     bounds
     ).addTo(map);
 
@@ -31,7 +30,49 @@ var makerRot = L.icon({
     iconSize: [30, 30]
 });
 
+// Text1: Spezifisches Wissen und spezifische Erfahrung; Punkt: [243, 370]
 
-L.marker([470, 525], {
+let text1;
+
+fetch('../assets/txts/1.txt', {mode: 'no-cors'})
+    .then(res => res.text())
+    .then(data => text1 = data)
+    .then(() => L.marker([243, 370], {
+        icon: makerRot
+    }).addTo(map).bindPopup(text1, {
+        maxWidth: 800,
+        keepInView: true,
+        maxHeight: 500
+    }).openPopup())
+
+console.log(text1);
+
+L.marker([243, 370], {
     icon: makerRot
-}).addTo(map).bindPopup('TestTest').openPopup();;
+}).addTo(map).bindPopup(text1).openPopup();
+
+// Verbindung zu: Diskurspraxis
+
+var punkte = [
+    [243, 370],
+    [450, 690]
+];
+
+// var polyline = L.polyline(punkte, {color: 'red'}).addTo(map);
+
+// Text2: 
+
+var text2;
+
+fetch('../assets/txts/2.html', {mode: 'no-cors'})
+    .then(res => res.text())
+    .then(data => text2 = data)
+    .then(() => 
+        L.marker([450, 690], {
+            icon: makerLila
+    }).addTo(map).bindPopup(text2, {
+        maxWidth: 800,
+        keepInView: true,
+        maxHeight: 500
+    }).openPopup())
+
