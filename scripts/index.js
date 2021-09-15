@@ -32,7 +32,8 @@ L.easyButton('fa-bars', function() {
 
 var sidebar = L.control.sidebar('sidebar', {
     position: 'left',
-    autoPan: false
+    autoPan: false,
+    closeButton: false
 });
 
 map.addControl(sidebar);

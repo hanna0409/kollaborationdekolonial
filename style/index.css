@@ -8,3 +8,69 @@
 cite {
     font-style: italic;
 }
+#sidebar {
+    padding: 0;
+}
+#sidebar h1 {
+    padding: 8px 24px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+.none-collapsible {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+.none-collapsible:hover {
+    background-color:lightskyblue;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .none-collapsible:after {
+    content: '\274F';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f1f1f1;
+  }

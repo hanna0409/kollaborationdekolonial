@@ -38,18 +38,18 @@
       background-clip: padding-box; }
   @media (max-width: 767px) {
     .leaflet-sidebar {
-      width: 100%;
+      width: 66%;
       padding: 0; }
       .leaflet-sidebar.left.visible ~ .leaflet-left {
-        left: 100%; }
+        left: 66%; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
-        right: 100%; }
+        right: 66%; }
       .leaflet-sidebar.left {
-        left: -100%; }
+        left: -66%; }
         .leaflet-sidebar.left.visible {
           left: 0; }
       .leaflet-sidebar.right {
-        right: -100%; }
+        right: -66%; }
         .leaflet-sidebar.right.visible {
           right: 0; }
       .leaflet-sidebar > .leaflet-control {
@@ -60,32 +60,59 @@
           border: 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .leaflet-sidebar {
-      width: 305px; }
+      width: 66%;
+      padding: 0; }
       .leaflet-sidebar.left.visible ~ .leaflet-left {
-        left: 305px; }
+        left: 66%; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
-        right: 305px; } }
+        right: 66%; }
+      .leaflet-sidebar.left {
+        left: -66%; }
+        .leaflet-sidebar.left.visible {
+          left: 0; }
+      .leaflet-sidebar.right {
+        right: -66%; }
+        .leaflet-sidebar.right.visible {
+          right: 0; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .leaflet-sidebar {
-      width: 390px; }
+      width: 66%;
+      padding: 0; }
       .leaflet-sidebar.left.visible ~ .leaflet-left {
-        left: 390px; }
+        left: 66%; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
-        right: 390px; } }
+        right: 66%; }
+      .leaflet-sidebar.left {
+        left: -66%; }
+        .leaflet-sidebar.left.visible {
+          left: 0; }
+      .leaflet-sidebar.right {
+        right: -66%; }
+        .leaflet-sidebar.right.visible {
+          right: 0; } }
   @media (min-width: 1200px) {
     .leaflet-sidebar {
-      width: 460px; }
+      width: 66%;
+      padding: 0; }
       .leaflet-sidebar.left.visible ~ .leaflet-left {
-        left: 460px; }
+        left: 66%; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
-        right: 460px; } }
+        right: 66%; }
+      .leaflet-sidebar.left {
+        left: -66%; }
+        .leaflet-sidebar.left.visible {
+          left: 0; }
+      .leaflet-sidebar.right {
+        right: -66%; }
+        .leaflet-sidebar.right.visible {
+          right: 0; }}
   .leaflet-sidebar .close {
     position: absolute;
     right: 20px;
     top: 20px;
     width: 31px;
     height: 31px;
-    color: #333;
+    color:  #333;
     font-size: 25px;
     line-height: 1em;
     text-align: center;
