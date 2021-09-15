@@ -11,49 +11,39 @@
 	<link rel="stylesheet" type="text/css" href="./scripts/leaflet/leaflet.css">
 	<!-- Dieses Stylesheet ist fuer eigene Designs -->
 	<link rel="stylesheet" type="text/css" href="./style/index.css"/>
+	<!-- Dieses Stylesheet ist die Buttons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
 		
 	<!-- Das Javascript Framework leaflet -->
 	<script src="./scripts/leaflet/leaflet.js"></script>
 
+	<!-- Script und Stylesheet vom CDM fuer den Fullscreen Mode -->
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+	<!-- Script und Stylesheet fuer Menu Button -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+	<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+	<!-- Script und Stylesheet fuer Sidebar -->
+	<script src='./scripts/L.Control.Sidebar.js'></script>
+	<link href='style/L.Control.Sidebar.css' rel='stylesheet' />
+
+	
 
 </head>
 <body>
-
-	<nav role="navigation" style="z-index: 99;">
-		<div id="menuToggle">
-		  <!--
-		  A fake / hidden checkbox is used as click reciever,
-		  so you can use the :checked selector on it.
-		  -->
-		  <input type="checkbox" />
-		  
-		  <!--
-		  Some spans to act as a hamburger.
-		  
-		  They are acting like a real hamburger,
-		  not that McDonalds stuff.
-		  -->
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		  
-		  <!--
-		  Too bad the menu has to be inside of the button
-		  but hey, it's pure CSS magic.
-		  -->
-		  <ul id="menu">
+	<div id="sidebar">
+		<h1>Menu</h1>
+		<ul id="menu">
 			<a href="#"><li>Home</li></a>
 			<a href="#"><li>About</li></a>
 			<a href="#"><li>Info</li></a>
 			<a href="#"><li>Contact</li></a>
-			<a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
 		  </ul>
-		</div>
-	  </nav>
+	</div>
 
-	<div id='map' style="z-index: 0;"></div>
+	<div id='map'></div>
 
 	<!-- dieses Script wird am Ende ausgefuehrt und produziert die Karte -->
 	<script src="./scripts/index.js"></script>

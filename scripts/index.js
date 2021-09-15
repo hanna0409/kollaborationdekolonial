@@ -13,10 +13,6 @@ var map = L.map('map', {
     maxBoundsViscosity: 0.75
 });
 
-map.zoomControl.setPosition('topright');
-
-map.addControl(new L.Control.Fullscreen().setPosition('topright'));
-
 var image = L.imageOverlay(
     './assets/bilder/WebsiteLayoutFINAL4.png', 
     bounds
@@ -25,6 +21,23 @@ var image = L.imageOverlay(
 map.fitBounds(bounds);
 
 map.setView([500, 500], 1.5)
+
+map.zoomControl.setPosition('topright');
+
+map.addControl(new L.Control.Fullscreen().setPosition('topright'));
+
+L.easyButton('fa-bars', function() {
+    sidebar.toggle();
+  }).addTo(map);
+
+var sidebar = L.control.sidebar('sidebar', {
+    position: 'left',
+    autoPan: false
+});
+
+map.addControl(sidebar);
+
+
 
 var makerLila = L.icon({
     iconUrl: './assets/marker/marker_lila.png',
