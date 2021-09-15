@@ -76,20 +76,24 @@
 	<script src="./scripts/index.js"></script>
 
 	<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-		
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.maxHeight){
-			  content.style.maxHeight = null;
-			} else {
-			  content.style.maxHeight = content.scrollHeight + 30 + "px";
-			} 
-		  });
-		}
+		const coll = document.querySelectorAll(".collapsible");
+
+		coll.forEach(item => {
+  			item.addEventListener("click", event => {
+    			const currentlyActiveitem = document.querySelector(".collapsible.active");
+				if(currentlyActiveitem && currentlyActiveitem !== item) {
+					currentlyActiveitem.classList.toggle("active");
+					currentlyActiveitem.nextElementSibling.style.maxHeight = 0;
+				}
+				item.classList.toggle("active");
+				const content = item.nextElementSibling;
+				if(item.classList.contains("active")) {
+					content.style.maxHeight = content.scrollHeight + "px";
+				} else { 
+					content.style.maxHeight = 0; 
+				}
+			});
+		});
 	</script>
 		
 
