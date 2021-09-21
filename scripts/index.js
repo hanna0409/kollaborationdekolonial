@@ -20,7 +20,7 @@ var image = L.imageOverlay(
 
 map.fitBounds(bounds);
 
-map.setView([500, 500], 1.5)
+map.setView([550, 480], 0.8)
 
 map.zoomControl.setPosition('topright');
 
@@ -50,16 +50,6 @@ var makerRot = L.icon({
     iconUrl: './assets/marker/marker_rot.png',
     iconSize: [10, 10]
 });
-
-// Der helper Marker
-
-var markerHelp = L.marker([500, 500], {
-    draggable: true
-}).addTo(map);
-
-markerHelp.on("dragend", function(e) {alert(markerHelp.getLatLng().toString())})
-
-
 
 
 // Text4: Spezifisches Wissen und spezifische Erfahrung; Punkt: [331, 370]

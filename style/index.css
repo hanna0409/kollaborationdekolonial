@@ -16,7 +16,7 @@ cite {
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: rgb(156, 156, 156);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -28,7 +28,7 @@ cite {
   }
 
 .none-collapsible {
-    background-color: lightblue;
+    background-color: rgb(192, 192, 192);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -44,7 +44,7 @@ cite {
   }
 
 .none-collapsible:hover {
-    background-color:lightskyblue;
+    background-color:#555;
   }
   
   .collapsible:after {
@@ -72,5 +72,5 @@ cite {
     max-height: 0;
     overflow:hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
   }
