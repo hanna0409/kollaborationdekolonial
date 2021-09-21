@@ -20,7 +20,7 @@ var image = L.imageOverlay(
 
 map.fitBounds(bounds);
 
-map.setView([500, 500], 1.5)
+map.setView([550, 480], 0.8)
 
 map.zoomControl.setPosition('topright');
 
