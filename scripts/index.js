@@ -51,6 +51,28 @@ var makerRot = L.icon({
     iconSize: [10, 10]
 });
 
+// Der helper Marker
+
+var markerHelp = L.marker([500, 500], {
+    draggable: true
+}).addTo(map);
+
+markerHelp.on("dragend", function(e) {alert(markerHelp.getLatLng().toString())})
+
+// Line-Tool
+
+var currentPolylines = [];
+
+function lineTo(punkt1, punkt2) {
+    currentPolylines.forEach(function (item) {
+        map.removeLayer(item)
+    });
+    map.closePopup(); 
+    var polyline = L.polyline([punkt1, punkt2], {color: 'red'}).addTo(map);
+    currentPolylines.push(polyline);
+    map.flyTo(punkt2);
+}
+
 
 // Text4: Spezifisches Wissen und spezifische Erfahrung; Punkt: [331, 370]
 
