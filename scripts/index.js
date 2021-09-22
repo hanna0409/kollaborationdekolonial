@@ -63,14 +63,9 @@ markerHelp.on("dragend", function(e) {alert(markerHelp.getLatLng().toString())})
 
 var currentPolylines = [];
 
-function lineTo(punkt1, punkt2) {
-    currentPolylines.forEach(function (item) {
-        map.removeLayer(item)
-    });
+function fly(punkt) {
     map.closePopup(); 
-    var polyline = L.polyline([punkt1, punkt2], {color: 'red'}).addTo(map);
-    currentPolylines.push(polyline);
-    map.flyTo(punkt2);
+    map.flyTo(punkt, 3);
 }
 
 
@@ -88,15 +83,6 @@ fetch('../assets/txts/4.html', {mode: 'no-cors'})
         keepInView: true,
         maxHeight: 500
     }))
-
-// Verbindung zu: Diskurspraxis
-
-//var punkte = [
-///    [243, 370],
-//    [450, 690]
-//];
-
-// var polyline = L.polyline(punkte, {color: 'red'}).addTo(map);
 
 // Text5: Klar formulierte Ziele und Interessen (307,322)
 

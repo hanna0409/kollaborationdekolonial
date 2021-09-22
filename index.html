@@ -67,8 +67,8 @@
 				<br><br> Unter dem Punkt <cite>Outline</cite> im Menü befindet sich eine Übersicht aller Texte aus der digitalen Mindmap in PDF Format zum Herunterladen, unter dem Punkt <cite>Verweise zu Literatur und Websites</cite> befindet sich eine Übersicht über die in den Texten verlinkten Quellen und Hinweise.
 				</p>
 			</div>
-		<button class="none-collapsible"><a href="#"></a>Verweise zu Literatur und Websites</a></button>
-		<button class="none-collapsible"><a href="#"></a>Outline</a></button>
+			<a href="./assets/downloads/Quellenverweise_KollaborationDekolonial.pdf" target="_blank"><button class="none-collapsible">Verweise zu Literatur und Websites</button></a>
+			<a href="./assets/downloads/Outline_KollaborationDekolonial.pdf" target="_blank"><button class="none-collapsible">Outline</button></a>
 	</div>
 
 	<div id='map'></div>
@@ -89,7 +89,7 @@
 				item.classList.toggle("active");
 				const content = item.nextElementSibling;
 				if(item.classList.contains("active")) {
-					content.style.maxHeight = content.scrollHeight + "px";
+					content.style.maxHeight = content.scrollHeight + 30 + "px";
 				} else { 
 					content.style.maxHeight = 0; 
 				}
