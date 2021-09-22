@@ -51,17 +51,7 @@ var makerRot = L.icon({
     iconSize: [10, 10]
 });
 
-// Der helper Marker
-
-var markerHelp = L.marker([500, 500], {
-    draggable: true
-}).addTo(map);
-
-markerHelp.on("dragend", function(e) {alert(markerHelp.getLatLng().toString())})
-
-// Line-Tool
-
-var currentPolylines = [];
+// flyto Funktion 
 
 function fly(punkt) {
     map.closePopup(); 
