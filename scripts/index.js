@@ -55,7 +55,7 @@ var makerRot = L.icon({
 
 function fly(punkt) {
     map.closePopup(); 
-    map.flyTo(punkt, 3);
+    map.flyTo(punkt, 2);
 }
 
 
@@ -175,7 +175,7 @@ fetch('../assets/txts/10.html', {mode: 'no-cors'})
 
     // Verbindung zu: Kunst als Möglichkeitsraum, Subjektivität, Umgang mit Emotionalität
 
-    // Text11: Schwarze*r Künstler*in; Punkt: [276, 462]
+    // Text11: Schwarze*r Künstler*in; Punkt: [248, 536]
 
     let text11;
 
@@ -392,7 +392,7 @@ fetch('../assets/txts/23.html', {mode: 'no-cors'})
 
     // Verbindung zu: Selbst- und Fremdrepräsentation
 
-    // Text24: Kritik und Lethargie; Punkt: [550, 804]
+    // Text24: Kritik und Lethargie; Punkt: [692, 399]
 
 let Text24;
 
@@ -703,7 +703,7 @@ fetch('../assets/txts/43.html', {mode: 'no-cors'})
         maxHeight: 500
     }))
 
-    // Text44: Transnationales Arbeiten; Punkt: [564, 759]
+    // Text44: Transnationales Arbeiten; Punkt: [564, 756]
 
 let Text44;
 
@@ -863,7 +863,7 @@ fetch('../assets/txts/53.html', {mode: 'no-cors'})
 
     // Verbindung zu: Kunst als Möglichkeitsraum
 
-    // Text54: Zeitmanagement/ Koordination; Punkt: [486, 758]
+    // Text54: Zeitmanagement/ Koordination; Punkt: [568, 573]
 
 let Text54;
 
@@ -978,7 +978,7 @@ fetch('../assets/txts/60.html', {mode: 'no-cors'})
 
     // Verbindung zu: Spefifisches Wissen und spezifische Erfahrung
 
-    // Text61: Erinnerungskultur; Punkt: [564, 234]
+    // Text61: Erinnerungskultur; Punkt: [564, 134]
 
 let Text61;
 
@@ -1261,7 +1261,7 @@ fetch('../assets/txts/77.html', {mode: 'no-cors'})
 
     // Verbindung zu: Ambivalente Position(ierung), Inreach und Outreach, Entscheidungskompetenzen und Macht teilen
 
-    // Text78: Interne Hierarchien und Arbeitsweise; Punkt: [583, 168]
+    // Text78: Interne Hierarchien und Arbeitsweise; Punkt: [694, 149]
 
 let Text78;
 
