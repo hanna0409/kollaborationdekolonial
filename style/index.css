@@ -8,35 +8,40 @@
 cite {
     font-style: italic;
 }
+
+
 #sidebar {
     padding: 0;
 }
 #sidebar h1 {
     padding: 8px 24px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .collapsible {
-    background-color: rgb(156, 156, 156);
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(156, 156, 156);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
 .none-collapsible {
-    background-color: rgb(192, 192, 192);
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(192, 192, 192);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
   
   .active, .collapsible:hover {
