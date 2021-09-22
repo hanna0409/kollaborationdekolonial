@@ -79,3 +79,7 @@ cite {
     transition: max-height 0.3s ease-out;
     background-color: #ffffff;
   }
+
+  button{
+    font-size: 8.5pt;
+  }

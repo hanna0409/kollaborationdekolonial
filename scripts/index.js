@@ -58,7 +58,7 @@ function fly(punkt) {
     if (circle) {
         circle = null;
     }
-    circle = L.circle(punkt, {radius: 2.2, interactive: false, color: '#9c9c9c'}).addTo(map);
+    circle = L.circle(punkt, {radius: 2.2, interactive: false, color: '#c0c0c0'}).addTo(map);
     map.closePopup(); 
     map.flyTo(punkt, 2);
     
