@@ -51,7 +51,7 @@ var makerRot = L.icon({
     iconSize: [10, 10]
 });
 
-// flyto Funktion 
+// flyto funktion 
 
 function fly(punkt) {
     map.closePopup(); 
