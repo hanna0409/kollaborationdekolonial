@@ -52,11 +52,11 @@ var makerRot = L.icon({
 });
 
 // flyto funktion 
-var circle = null;
+var circle;
 
 function fly(punkt) {
     if (circle) {
-        circle = null;
+        map.removeLayer(circle);
     }
     circle = L.circle(punkt, {radius: 2.2, interactive: false, color: '#9c9c9c'}).addTo(map);
     map.closePopup(); 
