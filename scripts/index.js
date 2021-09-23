@@ -41,15 +41,16 @@ map.addControl(sidebar);
 
 
 var makerLila = L.icon({
-    iconUrl: './assets/marker/marker_lila.png',
+    iconUrl: '../assets/marker/marker_lila.png',
     iconSize: [10, 10]
     
 });
 
 var makerRot = L.icon({
-    iconUrl: './assets/marker/marker_rot.png',
+    iconUrl: '../assets/marker/marker_rot.png',
     iconSize: [10, 10]
 });
+
 
 // flyto funktion 
 var circle;
