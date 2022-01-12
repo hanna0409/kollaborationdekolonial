@@ -1572,7 +1572,7 @@ let Text97;
 fetch('../assets/txts/97.html', {mode: 'no-cors'})
     .then(res => res.text())
     .then(data => text97 = data)
-    .then(() => L.marker([649, 276], {
+    .then(() => L.marker([649, 278], {
         icon: makerLila
     }).addTo(map).bindPopup(text97, {
         maxWidth: 800,
