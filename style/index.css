@@ -9,7 +9,6 @@ cite {
     font-style: italic;
 }
 
-
 #sidebar {
     padding: 0;
 }
@@ -17,14 +16,36 @@ cite {
     padding: 8px 24px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-#sidebar h2 {
+
+.collapsible h2{
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-size: 15px;
 }
 
+.none-collapsible h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.collapsible h2::after{
+  content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.none-collapsible h2::after {
+    content: '\274F';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
 .collapsible {
-  
   background-color: rgb(156, 156, 156);
   cursor: pointer;
   padding: 18px;
@@ -55,23 +76,7 @@ cite {
     background-color:#555;
   }
   
-  .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-  .none-collapsible:after {
-    content: '\274F';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
+  .active h2::after {
     content: "\2212";
   }
   
