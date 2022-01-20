@@ -16,12 +16,7 @@ cite {
     padding: 8px 24px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-<<<<<<< HEAD
-
-.collapsible h2{
-=======
 h2 {
->>>>>>> 397e3c79d133e55c75a68d70780ef9b1119127d6
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-size: 15px;
@@ -50,32 +45,23 @@ h2 {
 }
 
 .collapsible {
-<<<<<<< HEAD
-=======
-  font-family: 'Source Sans Pro', sans-serif;
->>>>>>> 397e3c79d133e55c75a68d70780ef9b1119127d6
   background-color: rgb(156, 156, 156);
-  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
 }
 
 .none-collapsible {
-  font-family: 'Source Sans Pro', sans-serif;
   background-color: rgb(192, 192, 192);
-  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
 }
   
   .active, .collapsible:hover {
