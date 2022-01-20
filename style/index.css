@@ -16,7 +16,7 @@ cite {
     padding: 8px 24px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-h2 {
+.collapsible h2 {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-size: 15px;
