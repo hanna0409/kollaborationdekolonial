@@ -11,4 +11,3 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
 
-Redirect 301 188.93.8.5 kollaborationdekolonial.de
